@@ -120,7 +120,7 @@ NodeManager. Just uncomment the settings you need and the sensors you want to ad
 
 #include <sensors/SensorSHT21_Dewpoint.h>
 #include "SensorSHT21_Dewpoint.h"
-SensorSHT21 sht21;
+SensorSHT21_Dewpoint sht21;
 
 //#include <sensors/SensorRelayTimer.h>
 #include "SensorRelayTimer.h"
@@ -171,6 +171,7 @@ void before() {
 	relaytimer3.setRelayPin(RELAY_3);
 	door1.setPin(Contact_1);
 	door2.setPin(Contact_2);
+	
 	
 	// sht21 sensor
 	sht21.setReportIntervalMinutes(1);

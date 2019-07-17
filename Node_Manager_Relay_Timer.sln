@@ -4,8 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Node_Manager_Relay_Timer", "Node_Manager_Relay_Timer.vcxproj", "{89B78F53-6BBD-45EC-99D6-AC9AA27FEC6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88} = {C5F80730-F44F-4478-BDAE-6634EFC2CA88}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NodeManager-master", "..\libraries\NodeManager-master\NodeManager-master.vcxitems", "{BCCFCE39-1849-4960-9884-005BEDDBC6F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NM_Relay_Timer", "..\NM_Relay_Timer\NM_Relay_Timer.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\libraries\NodeManager-master\NodeManager-master.vcxitems*{89b78f53-6bbd-45ec-99d6-ac9aa27fec6b}*SharedItemsImports = 4
+		..\libraries\NodeManager-master\NodeManager-master.vcxitems*{bccfce39-1849-4960-9884-005beddbc6f9}*SharedItemsImports = 9
+		..\libraries\NodeManager-master\NodeManager-master.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
@@ -15,6 +27,10 @@ Global
 		{89B78F53-6BBD-45EC-99D6-AC9AA27FEC6B}.Debug|x86.Build.0 = Debug|Win32
 		{89B78F53-6BBD-45EC-99D6-AC9AA27FEC6B}.Release|x86.ActiveCfg = Release|Win32
 		{89B78F53-6BBD-45EC-99D6-AC9AA27FEC6B}.Release|x86.Build.0 = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
